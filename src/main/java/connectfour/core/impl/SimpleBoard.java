@@ -16,9 +16,6 @@ public class SimpleBoard implements Board {
     private final Set<Integer> availableColumns = new TreeSet<>();
 
     public SimpleBoard(int[][] matrix, int rows, int columns, int winCondition) {
-        if (winCondition > rows && winCondition > columns) {
-            throw new IllegalArgumentException("win condition must <= rows or <=columns");
-        }
         this.rows = rows;
         this.columns = columns;
         this.winCondition = winCondition;

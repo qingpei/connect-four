@@ -16,7 +16,7 @@ public class GameTest {
         {
             // Replicates sample run.
             // Player 1 Red chooses "4", "5", "3", "6" .
-            // Player 2 Green chooses "4", "5", "2" .
+            // Player 2 Green chooses  "4", "5", "2" .
             Player player1 = new PredefinedPlayer("Player 1", Disc.RED, Arrays.asList("4", "5", "3", "6").iterator());
             Player player2 = new PredefinedPlayer("Player 2", Disc.GREEN, Arrays.asList("4", "5", "2").iterator());
             (new Game(player1, player2)).play();
@@ -27,8 +27,8 @@ public class GameTest {
     @Test
     public void drawGame() {
         Board board = new SimpleBoard(new int[3][2], 3, 2, 3);
-        Player player1 = new PredefinedPlayer("Player 1", Disc.RED, Arrays.asList("1", "2", "1").iterator());
-        Player player2 = new PredefinedPlayer("Player 2", Disc.GREEN, Arrays.asList("1", "2", "2").iterator());
+        Player player1 = new PredefinedPlayer("Player 1", Disc.RED, Arrays.asList("0", "9", "d", "1", "1", "1", "2").iterator());
+        Player player2 = new PredefinedPlayer("Player 2", Disc.GREEN, Arrays.asList("1", "1", "2", "2").iterator());
         (new Game(board, new SimpleReferee(), Arrays.asList(player1, player2))).play();
     }
 

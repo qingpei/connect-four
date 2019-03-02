@@ -1,4 +1,7 @@
 # Connect Four
+[![Build Status](https://travis-ci.org/qingpei/connect-four.svg?branch=master)](https://travis-ci.org/qingpei/connect-four)
+[![codecov](https://codecov.io/gh/qingpei/connect-four/branch/master/graph/badge.svg)](https://codecov.io/gh/qingpei/connect-four)
+
 A simple implementation of [Connect Four game](https://github.com/qingpei/connect-four/blob/master/connect4-question-description.md).
 
 ## To run the application:
